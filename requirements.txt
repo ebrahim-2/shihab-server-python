@@ -1,0 +1,13 @@
+fastapi==0.112.2
+langchain==0.2.15
+langchain_community==0.2.14
+langchain_openai==0.1.23
+marshmallow==3.22.0
+neo4j==5.23.1
+pandas==2.2.2
+passlib==1.7.4
+pydantic==2.8.2
+python-dotenv==1.0.1
+python_jose==3.3.0
+SQLAlchemy==2.0.32
+uvicorn==0.30.6
