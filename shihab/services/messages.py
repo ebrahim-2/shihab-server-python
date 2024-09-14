@@ -4,13 +4,13 @@ from fastapi.security import OAuth2PasswordBearer
 from pydantic import BaseModel
 from sqlalchemy import select
 from sqlalchemy.orm import Session
-from config import ALGORITHM, SECRET_KEY, SessionLocal
-from entities.message import Message
-from entities.messages_poll import MessagesPoll
+from shihab.config import ALGORITHM, SECRET_KEY, SessionLocal
+from shihab.entities.message import Message
+from shihab.entities.messages_poll import MessagesPoll
 from jose import JWTError, jwt
 
-from entities.user import User
-from graph_db import queryGraph
+from shihab.entities.user import User
+from shihab.graph_db import queryGraph
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
 

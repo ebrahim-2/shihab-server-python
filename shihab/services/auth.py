@@ -4,9 +4,8 @@ from sqlalchemy.orm import Session
 from jose import JWTError, jwt
 from passlib.context import CryptContext
 from datetime import datetime, timedelta
-from config import SECRET_KEY, ALGORITHM, ACCESS_TOKEN_EXPIRE_MINUTES
-from entities.user import User
-from config import SessionLocal
+from shihab.config import SECRET_KEY, ALGORITHM, ACCESS_TOKEN_EXPIRE_MINUTES, SessionLocal
+from shihab.entities.user import User
 from pydantic import BaseModel
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")

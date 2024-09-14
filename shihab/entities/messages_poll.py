@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
-from config import Base
-from .message import Message
+from shihab.config import Base
+from shihab.entities.message import Message
 
 class MessagesPoll(Base):
     __tablename__ = 'messages_polls'

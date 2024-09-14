@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, Text, Boolean, ForeignKey
 from sqlalchemy.orm import relationship
-from config import Base
+from shihab.config import Base
 
 class Message(Base):
     __tablename__ = "messages"
