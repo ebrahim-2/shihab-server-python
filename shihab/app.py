@@ -34,6 +34,8 @@ app.add_middleware(
 # init_auth_routes(app)
 # init_message_routes(app)
 
+create_tables()
+
 @app.post("/query")
 async def post_data(query: str):
     return "hello world"
