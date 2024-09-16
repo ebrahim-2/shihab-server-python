@@ -2,7 +2,7 @@ from fastapi import FastAPI, Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
-from shihab.config import SessionLocal, engine, Base
+from shihab.config import SessionLocal, create_tables, engine, Base
 from shihab.services.auth import init_auth_routes
 from shihab.services.messages import init_message_routes
 from shihab.graph_db import queryGraph
